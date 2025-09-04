@@ -1,0 +1,63 @@
+1.
+crear la carpeta libro abrir con open git bash here
+git init
+
+2.
+git status
+touch indice.txt
+para abrir use vi indice.txt 
+para insertar use i
+para guardar y cerrar use :wq
+git status
+git add .
+git status
+
+3.
+git commit -a 
+Coloque "A;adiendo indice de libro"
+git status
+
+4.
+vi indice.txt
+use i para insertar
+coloque las nuevas modificacionesy sali y guarde con :wq
+git diff
+git commit -a 
+Coloque "Añadiendo capitulo 3 sobre gestion de ramas"
+
+5.
+git log --oneline --graph
+mkdir carpetas 
+ls
+cd capitulos
+touch capitulo1.txt
+vi capitulo1.txt
+use i para insertar
+agregue lo requerido y sali y guarde con :wq
+git add .
+git commit -a 
+coloque "A;adiendo capitulo 1"
+git log --oneline --graph
+
+
+6.
+touch capitulo2.txt
+vi capitulo2.txt
+use i para insertar
+agregue lo requerido y sali y guarde con :wq
+git add .
+git commit -a 
+coloque "A;adiendo capitulo 2"
+git diff 56a3e4c
+git diff 97a92e3
+
+7.
+touch capitulo3.txt
+vi capitulo3.txt
+use i para insertar
+agregue lo requerido y sali y guarde con :wq
+git add .
+git commit -a 
+coloque "A;adiendo capitulo 3"
+
+
