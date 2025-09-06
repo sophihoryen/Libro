@@ -59,5 +59,64 @@ agregue lo requerido y sali y guarde con :wq
 git add .
 git commit -a 
 coloque "A;adiendo capitulo 3"
+git log --oneline --graph
+git diff 97a92e3
+
+
+8.
+cd ..
+vi indice. txt
+agregue lo requerido y sali y guarde con :wq
+git add .
+git commit -a
+
+
+
+
+git commit -a 
+coloque "A;adiendo capitulo 5 al indice"
+
+9.
+vi indice.txt
+i para insertar 
+eliminar la ultima linea agregada y salir y guardar con :wq
+git add .
+git commit -a
+coloque "ultima linea del indice eliminada"
+git status
+git restore indice.txt
+git status
+
+
+10.
+git checkout -b bibliografia
+git branch
+
+11.
+cd capitulos
+touch capitulo4.txt
+vi capitulo4.txt
+agregue lo requerido y sali y guarde con :wq
+git add .
+Coloque "A;adido el capitulo 4"
+git log --all --decorate --oneline --graph
+
+12.
+cd ..
+git checkout bibliografia
+touch bibliografia.txt
+agregue lo requerido y sali y guarde con :wq
+git add .
+Coloque "A;adido la primera referencia bibliografica"
+git log --all --decorate --oneline --graph
+
+13.
+git branch
+git checkout master
+git merge bibliografia
+git log --all --decorate --oneline --graph
+git branch -d bibliografia
+git log --all --decorate --oneline --graph
+
 
 
